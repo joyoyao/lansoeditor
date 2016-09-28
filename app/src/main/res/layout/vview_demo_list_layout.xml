@@ -1,0 +1,53 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+     
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vview_demo_list_hint"
+                android:textColor="@color/red"
+                android:layout_margin="10dip"
+                android:textSize="18sp"/>
+            
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:id="@+id/id_demo_list_tvvideo"/>
+     
+            
+            <Button 
+                android:id="@+id/id_vview_demo_commonwidget"  
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip" 
+                android:text="[视频+UI--举例1]\t\t\t普通控件" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+             <Button 
+                android:id="@+id/id_vview_demo_viewpage"    
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip"
+                android:text="[视频+UI--举例2]\t\t\tViewPage" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+             <Button 
+                android:id="@+id/id_vview_demo_drawimage"    
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip"
+                android:text="[视频+UI--举例3]\t\t\t涂鸦" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+              <Button 
+                android:id="@+id/id_vview_demo_dragimage"    
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip"
+                android:text="[视频+UI--举例4]\t\t\t拖动" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+             <Button 
+                android:id="@+id/id_vview_demo_image3d"    
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip"
+                android:text="[视频+UI--举例5]\t\t\t图片3D" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+             
+              <Button 
+                android:id="@+id/id_vview_demo_all"    
+                android:layout_height="60dip"  android:textSize="20sp" android:textStyle="bold"  android:layout_marginTop="30dip" android:layout_marginBottom="30dip"
+                android:text="[视频+UI--举例6]\t\t\t以上所有" android:background="@drawable/function_item_btn_bg" android:layout_width="match_parent"/>
+             
+           
+               
+        </LinearLayout>
+</ScrollView>

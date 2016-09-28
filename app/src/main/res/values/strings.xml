@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LanSongEditorDEMO</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="message_granted">All permissions have been granted.</string>
+    <string name="message_denied">Permission \"%1$s\" has been denied.</string>
+    
+     <string name="lansong_hint">杭州蓝松科技有限公司\n   专业的视频处理SDK开发团队.</string>
+    <string name="sdk_limit">SDK版本号是\"%1$s\" [商用版本]\n\nSDK底层做了授权限制,仅可在此demo中运行,并有效时间到 \"%2$d\"年 \"%3$d\"月之前,请注意.</string>
+    	
+    <string name="adv_hint5">"此APP为收费版本,价格可联系我们. 技术支持:单一APP,永久授权使用; 提供一年技术支持;普通问题3个工作日内及时解决;\n 联系方式:\n QQ:1852600324\n 公司电话:0571-89052701\n email:support@lansongtech.com."</string>
+  	
+  	<string name="select_video">请选择视频</string>
+		
+	<string name="video_editor_demo_hint">兼容完整的ffmpeg命令.这里仅举例画面裁剪的功能,来演示我们优化的ffmpeg硬件加速功能,更多可以在\n https://github.com/LanSoSdk/LanSoEditor_common \n这里下载,测试\n\n,
+	    功能流程: 解码得到画面--->把画面的高度裁剪一半-->保存为新的画面</string>
+    
+	<string name="mediapoolexecute_demo_hint">此功能演示:后台视频编辑\n\n 流程:打开视频播放,向里面增加两个图片和一个UI,其中给一个图片移动位置,并在3秒处放大一倍,在6秒处消失,处理中实时的形成视频,可以用来预览和传输等</string>
+    
+    <string name="pictureset_execute_demo_hint">此功能演示:后台图片合成\n\n 流程:同时向MediaPool获取多个BitmapSprite,然后根据MediaPool的时间进度,依次操作多个BitmapSprite,从而实现图片动画效果,这里仅演示平移效果, 实际使用可以平移,缩放,旋转,闪烁混合使用.也可以增加ViewSprite,来呈现花样的动画.</string>
+    
+	<string name="filtersprite_execute_hint">此功能演示:后台视频滤镜(MediaPool架构)\n\n. 流程:打开视频,做复古滤镜处理后播放,向里面增加两个图片,其中给一个图片移动位置,并在3秒处放大一倍,在6秒处消失,处理完后,实时的形成视频,可以用来预览和传输等</string>
+    
+	<string name="scaleexecute_demo_hint">此演示演示: 视频缩放\n\n 利用我们设置的ScaleExecute类,把视频画面等比例缩小一半,处理完后,形成新视频.
+		    适用在用户自己拍摄了高清的画面,需要缩放后再传输的场合.\n</string>
+    
+    <string name="filterexecute_demo_hint">此功能演示:后台视频滤镜\n\n.适用在当不需要UI界面做滤镜预览的场合.比如不经过滤镜预览或没有预览完毕,就可以做视频滤镜处理,这样的场合使用.</string>
+	
+	<string name="mediapool_hint">我们设计了一个视频处理类MediaPool,分为MediaPoolView和MediaPoolExecute,顾名思义:是一个丢放媒体进去的一个池子,您可以认为是photoshop的工作区 或android UI操作的layout类,这些媒体包括:</string>
+	    
+	<string name="origal_width">提示:\n当前视频宽度小于屏幕宽度, 采取原尺寸显示,您可以在代码中修改为自适应屏幕宽度显示形式</string>
+	<string name="fix_width">提示:\n当前视频宽度大于或等于屏幕宽度, 采取自适应到屏幕宽度,您可以在代码中修改为原尺寸的显示形式</string>
+
+	<string name="vview_demo_list_hint">说明:这里仅仅列举了视频和常用的几种控件的叠加.\n\n实际您可以任意发挥,最终生成您需要的个性化炫酷的画面</string>
+	<string name="commonwidget_hint">演示基本控件:\n\n演示UI设计中经常使用的TextView,Button,ImageView,进度条等在视频中的叠加,可以实时交互并实时保存到视频中.\n您实际项目中可任意发挥,构建炫酷或浪漫的视频.</string>
+	
+	
+	<string name="drawimage_hint">演示画面涂鸦:\n\n在画面中滑动,滑动的线条实时的保存到视频里.\n\n用在涂鸦,标注,或写一些趣味的文字场合.\n\n原理:是一个透明的ImageView,和图片涂鸦类似,您实际项目中可任意发挥,构建炫酷或浪漫的视频.</string>
+
+	<string name="dragimage_hint">演示增加图片拖动:\n\n拖动大虫,拖动后的效果实时的保存到视频里.\n\n用在图片动画,覆盖视频中某个区域等场合.\n\n原理:是一个透明的ImageView, 操作ImageView的onTouch事件来完成,您实际项目中可任意发挥,构建炫酷或浪漫的视频.</string>
+		
+	<string name="vview_viewpage_hint">演示增加ViePage:\n\n在视频顶点放置了一个ViewPage,可以手动或自动让图片切换\n\n 用在需要增加ViewPage来实现炫酷的场合,比如你可以用开源的酷炫控件PagedHeadListView来个性化您的视频,构建炫酷或浪漫的视频.</string>
+	
+	<string name="vview_image3d_hint">演示增加图片3D效果:\n\n \t上下图片滑动, 呈现图片3D效果,实时增加到视频中.\n您实际项目中可任意发挥,构建炫酷或浪漫的视频.</string>
+	
+	<string name="video_remark">滑动画面,进行标记\n\n用在需要在画面中增加箭头,需要特意注意某个画面区域的场合.原理是:根据Touch事件来实时的增加/移动/删除一个图片</string>
+	
+		
+	<string name="sdk_hint1">我们提供纯净的API\n个性化的APP任您自由发挥</string>
+	<string name="sdk_hint2">MediaPool架构\n这是一个容器,您可以向里面增删视频/图片/文字/UI界面/声音等.\n\n或者你认为是一个炒菜的锅,你放进去什么食材,就是什么菜肴.\n放进去什么,就是什么\n\n\n像编辑UI界面一样\n编辑视频从未如此简单.</string>
+	<string name="sdk_hint3">丰富的滤镜效果\n实时切换/混合使用,完全任您个性发挥</string>
+	<string name="sdk_hint4">您可以把UI增加到视频里\n也可以直接把UI生成视频\n\n来呈现动画文字/视频涂鸦/炫酷视频/浪漫情诗等</string>
+	<string name="sdk_hint5">多种处理方法\n\n您可以在UI线程中实时编辑,也可以放到后台统一处理</string>
+	<string name="sdk_hint_pdf">更多详细的文档说明, 请联系我们获取\n\n也可直接提供技术支持指导.</string>
+	
+	
+	<string name="scale480_hint">当前设置MediaPool宽高是480x480, 如果源视频不是1:1, 则会等比例缩放, 并在空白处增加黑边, 请知悉!!\n实际需求您可以任意设置</string>
+	<string name="gaobai_hint">\n场合:让用户输入一些文字,生成浪漫的视频,分享出去,让您的APP更加有趣一些\n原理:\n把UI界面投递到MediaPool中,来生成视频,可以另外增加视频,图片,声音等元素,让您的功能更好玩一些,这里仅演示文字部分.</string>
+	   <string name="gaobai_1">认识你</string>
+<string name="gaobai_2">一定是命运的安排</string>
+<string name="gaobai_3">如果这是一场错误</string>
+<string name="gaobai_4">那我以后将不再相信命运</string>
+
+
+<string name="gaobai_5">如果不是</string>
+<string name="gaobai_6">难道至始至终</string>
+<string name="gaobai_7">都是我一个人在做梦</string>
+
+
+<string name="gaobai_8">从那一天</string>
+<string name="gaobai_9">我遇见了幸福</string>
+<string name="gaobai_10">那么地美丽</string>
+<string name="gaobai_11">那么地眩目</string>
+
+
+<string name="gaobai_12">仿佛</string>
+<string name="gaobai_13">做梦般的现实</string>
+<string name="gaobai_14">这不会只是一个</string>
+<string name="gaobai_15">真实感十足的梦境吧</string>
+
+
+
+<string name="gaobai_16">希望</string>
+<string name="gaobai_17">让我在你的身旁</string>
+<string name="gaobai_18">陪你细数秋风</string>
+<string name="gaobai_19">陪你夏夜听雨</string>
+<string name="gaobai_20">携手到白首</string>
+
+
+
+<string name="gaobai_end1">杭州蓝松科技</string>
+<string name="gaobai_end2">专业的视频处理开发团队</string>
+<string name="gaobai_end3">Demo演示 之《浪漫情诗》</string>
+</resources>

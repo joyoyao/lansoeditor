@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/w07">
+        
+        <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="90dp"
+              android:text="@string/lansong_hint"
+              android:textColor="@color/red" 
+              android:textSize="23sp" />
+        
+        
+         <Button 
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:text="开始评估测试"
+        android:background="@drawable/rect2_button_bg"
+        android:onClick="startbutton"/>
+        
+    </RelativeLayout>
